@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: stock-keeper
+Version: 0.1.0
+Summary: AI-driven stock portfolio recommendation engine
+Author-email: Stock Keeper <noreply@example.com>
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy>=2.0
+Requires-Dist: requests>=2.31
+Requires-Dist: scikit-learn>=1.3
+
+# Stock Keeper
+
+AI-driven stock portfolio recommendation engine.
+
+## Quick Start
+
+1. Install dependencies:
+
+   ```bash
+   python -m pip install -e .
+   ```
+
+2. Run CLI:
+
+   ```bash
+   stock-keeper --symbols AAPL,MSFT --api-key <YOUR_FINNHUB_KEY>
+   ```
+
+3. Run API:
+
+   ```bash
+   uvicorn stock_keeper.interface.api:app --reload
+   ```
+
+## Project Structure
+
+- `stock_keeper/clients`: API clients (Finnhub)
+- `stock_keeper/data`: Feature engineering
+- `stock_keeper/forecasting`: Forecast models
+- `stock_keeper/scoring`: Scoring rules
+- `stock_keeper/optimization`: Portfolio allocation
+- `stock_keeper/interface`: CLI and API

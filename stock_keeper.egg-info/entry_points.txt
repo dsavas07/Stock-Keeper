@@ -1,0 +1,2 @@
+[console_scripts]
+stock-keeper = stock_keeper.main:main
