@@ -1,10 +1,10 @@
 import datetime
 from typing import Dict, List, Optional
-import numpy as np
+## import numpy as np
 import pandas as pd
 
 from stock_keeper.clients.finnhub_client import FinnhubClient
-from stock_keeper.data.feature_engineering import compute_returns, compute_moving_average, compute_volatility, compute_momentum
+from stock_keeper.data.feature_engineering import compute_returns, compute_volatility, compute_momentum ##, compute_moving_average 
 from stock_keeper.data.sentiment import sentiment_score
 from stock_keeper.forecasting.forecaster import Forecaster
 from stock_keeper.scoring.scorer import build_ticker_signals, compute_score

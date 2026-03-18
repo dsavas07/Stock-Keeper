@@ -25,4 +25,4 @@ jobs:
       - name: Run tests
         run: python -m pytest -q
       - name: Run lint
-        run: ruff check .
+        run: ruff check --fix --output_format=github .
