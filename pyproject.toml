@@ -7,7 +7,7 @@ requires-python = ">=3.10"
 authors = [
   {name = "Stock Keeper", email = "noreply@example.com"}
 ]
-license = {text = "MIT"}
+license = "MIT"
 
 dependencies = [
   "pandas>=2.2",
