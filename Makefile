@@ -7,4 +7,4 @@ test:
 
 lint:
 	python -m pip install ruff
-	ruff check --fix --output_format=github .
+	ruff check --fix
