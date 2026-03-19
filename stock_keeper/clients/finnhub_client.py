@@ -6,7 +6,7 @@ import requests
 
 
 class FinnhubClient:
-    BASE_URL = "https://finnhub.io/api/v1"
+    BASE_URL = "https://api.finnhub.io/api/v1"
 
     def __init__(self, api_key: str, rate_limit_s: float = 0.35, cache_path: Optional[str] = None):
         self.api_key = api_key
