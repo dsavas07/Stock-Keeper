@@ -17,8 +17,8 @@ class PortfolioAgent:
         self.window_days = window_days
 
     def _get_price_df(self, symbol: str) -> pd.DataFrame:
-        to_ts = int(datetime.datetime.utcnow().timestamp())
-        from_ts = int((datetime.datetime.utcnow() - datetime.timedelta(days=self.window_days)).timestamp())
+        to_ts = int(datetime.datetime.now(datetime.timezone.utc).timestamp())
+        from_ts = int((datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=self.window_days)).timestamp())
         data = self.client.get_historical_prices(symbol, from_ts=from_ts, to_ts=to_ts)
         if data.get("s") != "ok":
             raise ValueError(f"No price data for {symbol}")
