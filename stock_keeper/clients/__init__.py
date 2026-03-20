@@ -1,3 +1,4 @@
-from .finnhub_client import FinnhubClient
+from __future__ import absolute_import
 
-__all__ = ["FinnhubClient"]
+from .finnhub_client import FinnhubClient
+from .exceptions import FinnhubAPIException, FinnhubRequestException
