@@ -3,6 +3,6 @@
 /*.log
 *.env
 *.bak
-/marketwatch_news.duckdb*
+/marketwatch_news*
 /marketwatch_articles
 /DB_PATH
