@@ -4,3 +4,4 @@
 *.env
 *.bak
 *.duckdb
+*.duckdb.wal
